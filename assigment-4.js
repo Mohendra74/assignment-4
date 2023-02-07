@@ -1,4 +1,4 @@
-/*
+
 // 1st Problem--
   //How to math oparetion in a function and return the value..
 function mindGame(number){
@@ -32,9 +32,8 @@ let nam = 'Mohendra Kishor Das';
 
 
 
-
 //3rd Problem--
-//How to do comparison and some calculation..
+//How to do comparison and some calculation useing if and else if conditional statements...
  function isLGSeven(number1){
    let subValue = number1 - 7;
    if(subValue < 7){
@@ -49,10 +48,10 @@ let nam = 'Mohendra Kishor Das';
  let d = isLGSeven(num1);
  console.log(d);
 
-*/
 
 
 //4th Problem...
+//this function cary a array is age. There is many numbers and some numbers is a negetive value. And this negetive value make a new array.This new array length is output....
 let numbers =[22,17,-12,24,16,-20,-18,14,-19,21];
 
 function findingBadData(age){
@@ -68,6 +67,25 @@ function findingBadData(age){
 }
 let negAge = findingBadData(numbers);
 console.log(negAge);
+
+
+
+//5th Problem--
+//How to a function with multipile parameter, and multiply different different numbers this parameter. Again get total sum of parameters.how to call function and return value...
+function gemsToDiamond(first,second,third){
+   let result = (first*21) + (second*32) + (third*43);
+ if(result < 1000*2){
+    return result;
+ }
+ else if(result >= 1000*2){
+    const newResult = result - 2000;
+    return newResult;
+ }
+}
+ 
+let paraValue = gemsToDiamond(20,30,40);
+console.log(paraValue);
+ 
 
 
 
