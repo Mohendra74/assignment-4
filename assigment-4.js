@@ -63,9 +63,11 @@ function findingBadData(age){
          badData.push(element);
        }
    }
-   console.log(badData);
+    let allBadData = badData.length;
+    return allBadData;
 }
-findingBadData(numbers);
+let negAge = findingBadData(numbers);
+console.log(negAge);
 
 
 
