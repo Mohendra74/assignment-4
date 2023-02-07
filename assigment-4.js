@@ -1,3 +1,4 @@
+/*
 // 1st Problem--
   //How to math oparetion in a function and return the value..
 function mindGame(number){
@@ -48,14 +49,24 @@ let nam = 'Mohendra Kishor Das';
  let d = isLGSeven(num1);
  console.log(d);
 
+*/
 
 
 //4th Problem...
 let numbers =[22,17,-12,24,16,-20,-18,14,-19,21];
 
 function findingBadData(age){
-
+   const badData = [];
+   for(let i = 0; i < age.length; i++){
+       let element = age[i];
+       if(element < 0){
+         badData.push(element);
+       }
+   }
+   console.log(badData);
 }
 findingBadData(numbers);
+
+
 
 
